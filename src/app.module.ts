@@ -4,17 +4,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [
-    TypeOrmModule.forRoot({
-      type: 'mysql',
-      host: 'localhost',
-      port: 3306,
-      username: 'sample',
-      password: 'sample',
-      database: 'sample',
-      synchronize: false,
-    }),
-  ],
+  imports: [TypeOrmModule.forRoot()],
   controllers: [AppController],
   providers: [AppService],
 })
