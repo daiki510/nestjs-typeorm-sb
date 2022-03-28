@@ -8,8 +8,8 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
-@Entity()
-export class BlogEntity {
+@Entity('blogs')
+export class Blog {
   @PrimaryGeneratedColumn()
   id: number;
 

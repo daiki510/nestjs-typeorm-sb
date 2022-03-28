@@ -6,11 +6,10 @@ module.exports = {
   password: process.env.MYSQL_PASSWORD,
   database: process.env.MYSQL_DATABASE,
   synchronize: false,
-  // autoLoadEntities: true,
-  // entities: ['dist/entities/*.entity.js'],
-  // migrations: ['dist/migrations/*.js'],
-  // cli: {
-  //   entitiesDir: '../entities',
-  //   migrationsDir: '../migrations',
-  // },
+  entities: ['dist/entities/*.entity.js'],
+  migrations: ['dist/migrations/*.js'],
+  cli: {
+    entitiesDir: './src/entities',
+    migrationsDir: './src/migrations',
+  },
 };
